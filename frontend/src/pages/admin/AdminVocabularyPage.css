@@ -1,0 +1,115 @@
+@import './AdminTopicsPage.css';
+
+.admin-filter {
+  appearance: none;
+  background: #ffffff;
+  border: 2px solid #e3e9f2;
+  border-radius: 999px;
+  color: #263241;
+  font: inherit;
+  min-width: 200px;
+  outline: none;
+  padding: 0 40px 0 16px;
+}
+
+.admin-refresh-row {
+  display: flex;
+  justify-content: flex-end;
+  margin: -6px 0 18px;
+}
+
+.admin-pill {
+  background: #e8eef7;
+  border-radius: 8px;
+  color: #111827;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 8px 12px;
+}
+
+.admin-part-of-speech {
+  background: #e8eef7;
+  border-radius: 999px;
+  color: #263241;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.admin-word-cell {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.admin-audio-button {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d9e1ec;
+  border-radius: 8px;
+  color: #1769aa;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition:
+    box-shadow 160ms ease,
+    transform 160ms ease;
+  width: 32px;
+}
+
+.admin-audio-button:hover:not(:disabled) {
+  box-shadow: 0 8px 16px rgba(17, 24, 39, 0.16);
+  transform: translateY(-2px);
+}
+
+.admin-audio-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.admin-vocabulary-table {
+  min-width: 1180px;
+}
+
+.admin-vocabulary-table th:nth-child(1),
+.admin-vocabulary-table td:nth-child(1) {
+  width: 28%;
+}
+
+.admin-vocabulary-table th:nth-child(2),
+.admin-vocabulary-table td:nth-child(2) {
+  width: 20%;
+}
+
+.admin-vocabulary-table th:nth-child(3),
+.admin-vocabulary-table td:nth-child(3) {
+  text-align: center;
+  width: 12%;
+}
+
+.admin-vocabulary-table th:nth-child(4),
+.admin-vocabulary-table td:nth-child(4) {
+  width: 20%;
+}
+
+.admin-vocabulary-table th:nth-child(5),
+.admin-vocabulary-table td:nth-child(5) {
+  width: 14%;
+}
+
+.admin-vocabulary-table th:nth-child(6),
+.admin-vocabulary-table td:nth-child(6) {
+  width: 6%;
+}

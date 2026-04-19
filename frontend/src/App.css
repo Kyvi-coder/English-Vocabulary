@@ -1,0 +1,31 @@
+.admin-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 18px 24px 0;
+}
+
+.admin-nav button {
+  background: #ffffff;
+  border: 1px solid #d9e1ec;
+  border-radius: 8px;
+  color: #263241;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 10px 16px;
+  transition:
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.admin-nav button:hover {
+  box-shadow: 0 8px 16px rgba(17, 24, 39, 0.16);
+  transform: translateY(-2px);
+}
+
+.admin-nav button.active {
+  background: #22a06b;
+  border-color: #22a06b;
+  color: #ffffff;
+}

@@ -4,8 +4,7 @@ CREATE TABLE IF NOT EXISTS vocabulary (
     meaning TEXT NOT NULL,
     pronunciation VARCHAR(100),
     example_sentence TEXT,
-    image_url VARCHAR(255),
-    audio_url VARCHAR(255),
+    part_of_speech VARCHAR(50),
     topic_id INT NOT NULL,
     CONSTRAINT fk_vocabulary_topic
         FOREIGN KEY (topic_id) REFERENCES topic(id)
